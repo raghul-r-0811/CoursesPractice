@@ -52,5 +52,12 @@ public class BinaryTree {
         }
     }
 
+    public void interativeInOrederTraversal(TreeNode root){
+        if(root != null){
+
+
+        }
+    }
+
 
 }
