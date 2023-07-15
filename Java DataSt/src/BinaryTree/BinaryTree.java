@@ -9,9 +9,14 @@ public class BinaryTree {
 
         BinaryTree newtree = new BinaryTree();
         newtree.createBinaryTree();
+        System.out.println("Recursive Pre-Order Traversal of Binary Tree");
         newtree.recursivePreOrderTraversal(newtree.root);
         System.out.println();
         newtree.iterativePreOrderTraversal(newtree.root);
+        newtree.iterativeInOrederTraversal(newtree.root);
+        System.out.println("Recursive Pre-Order Traversal of Binary Tree");
+        newtree.recursiveInOrderTraversal(newtree.root);
+        System.out.println();
 
 
     }
@@ -41,6 +46,7 @@ public class BinaryTree {
 
 
     public void iterativePreOrderTraversal(TreeNode root){
+        System.out.println("Recursive Pre-Order Traversal of Binary Tree");
         if(root == null) return;
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
@@ -50,6 +56,7 @@ public class BinaryTree {
             if(temp.right != null) stack.push(temp.right);
             if(temp.left != null) stack.push(temp.left);
         }
+        System.out.println();
     }
 
     public void iterativeInOrderTraversal(TreeNode root){
@@ -70,6 +77,11 @@ public class BinaryTree {
         System.out.println();
 
     }
-
+    public vodi recursiveInOrderTraversal(TreeNode root){
+        if(root == null) return;
+        recursiveInOrderTraversal(root.left);
+        recursiveInOrderTraversal(root.right);
+        System.out.print(root.data +" " );
+    }
 
 }
