@@ -16,7 +16,7 @@ public class BinaryTree {
         System.out.println();
         newtree.iterativePreOrderTraversal(newtree.root);
         newtree.iterativeInOrderTraversal(newtree.root);
-        System.out.println("Recursive Pre-Order Traversal of Binary Tree");
+        System.out.println("Recursive In-Order Traversal of Binary Tree");
         newtree.recursiveInOrderTraversal(newtree.root);
         System.out.println();
         System.out.println("Recursive Post-Order Traversal of a Binary Tree");
