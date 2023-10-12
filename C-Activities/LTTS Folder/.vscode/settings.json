@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "type_traits": "cpp"
+    },
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Ubuntu  Mono",
+    "editor.fontWeight": "normal",
+    "editor.fontVariations": true,
+    "editor.cursorSurroundingLinesStyle": "default",
+    "editor.letterSpacing": 0
+    "workbench.sidebar.defaultWidth" = 400
+}

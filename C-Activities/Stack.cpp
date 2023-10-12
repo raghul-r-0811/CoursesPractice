@@ -17,7 +17,7 @@ struct Stack *createStack(unsigned size ){
 }
 
 int isFull(struct Stack *stack){
-    return stack->top = stack->size-1;
+    return stack->top == stack->size-1;
 }
 
 int isEmpty(struct Stack *stack){

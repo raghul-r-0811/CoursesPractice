@@ -1,0 +1,2 @@
+ #include <stdio.h> 2 #include <pthread.h> 3 #include <unistd.h> 4 void *print_char(void *arg) 5 { 6 while (1) { 7 fputc('|', stderr); 8 //printf("|"); 9 usleep(100000); 10 } 11 } 12 int main() { 13 pthread_t thread_id; 14 pthread_create(&thread_id, NULL, print_char, NULL); 15 while (1) { 16 fputc('-', stderr); 17 //printf("-"); 18 usleep(100000); 19 } 20 return 0; 21 }
+
